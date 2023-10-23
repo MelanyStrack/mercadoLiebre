@@ -1,0 +1,40 @@
+
+
+.home_header {
+    background-image: url("/img/logo-mercado-liebre.svg");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position:30px -40px;
+    background-color: var(--color-amarillo);
+    font-family: "Roboto", sans-serif;
+}
+
+.searchBar_header {
+    padding-top: 18.5%;
+    padding-left: 2.4%;
+}
+
+.searchBar_header p{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-grisOscuro);
+    border: 1px solid black;
+    background-color: white;
+    margin-right: 185px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    margin-top: 155px;
+
+}
+
+.fa-magnifying-glass {
+    border: 1px solid black;
+    background-color: white;
+    padding-top: 1.2%;
+    padding-right: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 1.2%;
+    margin-top: -80px;
+}

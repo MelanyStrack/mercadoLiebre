@@ -1,0 +1,15 @@
+:root {
+    --color-amarillo:#EAC926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --color-grisOscuro: #666;
+    --color-grisClaro: #ebebeb;
+    --color-verde: #39b54a;
+}
+body{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
