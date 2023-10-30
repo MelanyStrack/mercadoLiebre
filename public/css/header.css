@@ -1,6 +1,8 @@
 .home_header {
     background-color: var(--color-amarillo);
     font-family: "Roboto", sans-serif;
+    align-self: flex-start;
+    width: 100%;
 }
 
 .home_header img {
@@ -27,30 +29,71 @@
 .compra_cuotas_home p{
     text-align: center;
     font-size: 12px;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 4%;
 }
 
 
 .home_nav ul{
-    margin: 0;
-    padding: 0;
-    font-size: 12px
+    display: none;
 }
 
 .home_nav .login_bar{
-    margin-top: 3%;
+    display: none;
 }
 
 .burger-menu .fa-bars{
     font-size: 20px;
     background-color: var(--color-celeste);
     padding: 3%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 20%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border-radius: 15%;
     
 }
 .burger-menu{
     text-align: center;
+}
+
+/* VERSION TABLET */
+@media(min-width:361px){
+    .home_nav ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        margin-left: 2%;
+    }
+    
+    .home_nav .login_bar{
+        display: block;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .home_header img {
+        width: 35%;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+    .fa-magnifying-glass {
+        padding: 0.2%;
+    }
+    .searchBar_header {
+        padding-top: 1%;
+    }
+
+}
+
+/* VERSION DESKTOP */
+@media(min-width:769px){
+    .home_header img {
+        width: 25%;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
 }
