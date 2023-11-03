@@ -56,7 +56,7 @@
 }
 
 /* VERSION TABLET */
-@media(min-width:361px){
+@media(min-width:768px){
     .home_header{
         display: flex;
         align-items: center;
@@ -116,7 +116,7 @@
 }
 
 /* VERSION DESKTOP */
-@media(min-width:769px){
+@media(min-width:1024px){
     .searchBar_header {
         margin-right: 5%;
         width: 25%;
