@@ -1,0 +1,33 @@
+.register__main{
+    background-color:var(--color-gris-claro);
+    padding: 2% 4%;
+}
+
+.register__form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:5%
+}
+.register__form input{
+    display: inline;
+    padding:2.5% 5%;
+    border: 1px solid white;
+    border-radius: 5%;
+    margin-top: 12%;
+}
+
+.register__form div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register__form label{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.register__form div input{
+ 
+}
+
