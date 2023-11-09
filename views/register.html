@@ -12,7 +12,7 @@
         <img src="/img/logo-mercado-liebre.svg" alt="logo de mercado liebre">
         <div class="searchBar_header"> 
           <form action="">
-            <input type="text" placeholder="Buscar" id="search" >
+            <input type="text" placeholder="Buscar productos, marcas y más" id="search" >
             <i class="fa-solid fa-magnifying-glass"></i>
           </form>
         </div>
@@ -27,8 +27,8 @@
             <li><a href="">Ayuda</a></li>
           </ul>
           <ul class="login_bar">
-            <li><a href="">Creá tu cuenta <i class="fa-regular fa-id-card" style="color: #000000;"></i></a></li>
-            <li><a href="">Ingresá <i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></a></li>
+            <li><a href="/Registrarse">Creá tu cuenta <i class="fa-regular fa-id-card" style="color: #000000;"></i></a></li>
+            <li><a href="/Ingresar">Ingresá <i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></a></li>
             <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></a></li>
           </ul>
         </nav>
@@ -38,18 +38,21 @@
       </header>
 
       <main class="register__main">
+        <h1>CREAR CUENTA</h1>
         <form action="/Registrarse" method="post" class="register__form"> 
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido"required>
-                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
-            
-                <label for="fecha">Fecha de nacimiento</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <div class="register__main__div__fecha">
+              <label for="fecha"><h4>Fecha de nacimiento</h4></label>
                 <input type="date" name="fecha" id="fecha">
+            </div>
             
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
 
-            <div class="register__form__div__perfilUsuario">
-                <label for="perfilUsuario">Perfil del usuario</label>
+            <article class="register__form__article__perfilUsuario">
+                <label for="perfilUsuario"><h4>Perfil del usuario</h4></label>
                 <div> 
                     <input type="radio" name="perfilUsuario" id="perfilUsuario" value="Comprador">
                     <label for="Comprador">Comprador</label>
@@ -58,9 +61,9 @@
                     <input type="radio" name="perfilUsuario" id="perfilUsuario" value="Vendedor">
                     <label for="Vendedor">Vendedor</label>
                 </div>
-            </div>
-            
-            <label for="interes">Intereses</label>
+              </article>
+            <article class="register__main__form__article__intereses">
+              <label for="interes" class="intereses"><h4>Intereses</h4></label>
             <div>
                 <input type="checkbox" name="interes" value="Electro">
                 <label for="Electro">Electro</label>
@@ -81,14 +84,46 @@
                 <input type="checkbox" name="interes" value="Vida sana">
                 <label for="Vida sana">Vida sana</label>
             </div>
-                <label for="foto">Seleccionar una imagen para el perfil:</label>
+          </article>
+
+            <div class="register__main__form__div__foto">
+              <label for="foto" class="register__main__label__perfil"><h4>Seleccionar una imagen para el perfil:</h4></label>
                 <input type="file" name="foto" accept=".jpg, .png">
-                <input type="password" name="password" placeholder="Contraseña">
-                <input type="password" name="password" placeholder="Confirmar contraseña">
+            </div>
+
+                <input type="password" name="password" class="register__main__form__input__confirm__password" placeholder="Contraseña">
+                <input type="password" name="password" class="register__main__form__input__confirm__password" placeholder="Confirmar contraseña">
             
-            <button type="reset">Cancelar</button>
-            <button type="submit">Enviar</button>
+            <button type="reset" class="register__main__form__button__cancelar" >Cancelar</button>
+            <a href="/"><button type="submit"><a href="/">Enviar</a></button></a>
         </form>
+
       </main>
+      <footer>
+        <article class="home_footer_pago">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Pagá con tarjeta o en efectivo</h3>
+          <p>
+            Con Mercado Liebre Cash, tenés cuotas sin <br> interés con tarjeta o efectivo en puntos de <br> pago. ¡Y siempre es seguro!
+          </p>
+        </article>
+        <article>
+          <i class="fa-solid fa-gift"></i>
+          <h3>Envío gratis desde $2.500</h3>
+          <p>
+            Solo por estar registrad@ en Mercado Liebre <br> tenés envíos gratis en miles de productos.  <br> Es un beneficio de Mercado Puntos.
+          </p>
+        </article>
+        <article>
+          <i class="fa-solid fa-user-shield"></i>
+          <h3>Seguridad, de principio a fin</h3>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, <br> no hay nada que no puedas hacer, porque <br> estás siempre protegid@.
+          </p>
+        </article>
+        <div class="copyright">
+          <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+      </footer>
 </body>
 </html>

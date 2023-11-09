@@ -9,6 +9,10 @@ app.get("/",(req,res)=>{
 app.get("/Registrarse",(req,res)=>{
     res.sendFile(path.join(__dirname, "/views/register.html"))
 });
+app.get("/Ingresar",(req,res)=>{
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});
+
 
 app.use(express.static("public"));
 
