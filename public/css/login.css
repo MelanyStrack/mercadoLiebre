@@ -52,5 +52,12 @@
     .login__main form button{
         margin-top: 8%;
         margin-bottom: 5%;
+        transition: all 1s;
+    }
+    .login__main form a{
+        color: white;
+    }
+    .login__main form button:hover{
+        background-color: #0022AA;
     }
 }
